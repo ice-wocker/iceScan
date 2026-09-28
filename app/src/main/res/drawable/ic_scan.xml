@@ -1,0 +1,9 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp" android:height="24dp"
+    android:viewportWidth="24" android:viewportHeight="24">
+    <!-- 四个扫描角 + 中间一道扫过纸面的光 -->
+    <path android:fillColor="@color/accent"
+        android:pathData="M4,4h6v2.2H6.2V10H4V4zM14,4h6v6h-2.2V6.2H14V4zM4,14h2.2v3.8H10V20H4V14zM17.8,14H20v6h-6v-2.2h3.8V14z" />
+    <path android:fillColor="@color/brand"
+        android:pathData="M5.6,11.1h12.8v1.8H5.6z" />
+</vector>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 固定深色：这是一支「扫描笔」，界面上大部分是白纸黑字，
+         深底能把照片衬出来，翻页时也不会被系统亮色主题晃眼 -->
+    <style name="Theme.IceScan" parent="@android:style/Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:colorPrimary">@color/brand</item>
+        <item name="android:colorPrimaryDark">@color/bg</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:statusBarColor">@color/bg</item>
+        <item name="android:navigationBarColor">@color/bg</item>
+        <item name="android:textColorPrimary">@color/text</item>
+        <item name="android:textColorSecondary">@color/text_dim</item>
+        <item name="android:textColorHint">@color/text_faint</item>
+    </style>
+
+    <style name="Title" parent="@android:style/TextAppearance.Material.Title">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="Subtitle" parent="@android:style/TextAppearance.Material.Caption">
+        <item name="android:textColor">@color/text_dim</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="SectionTitle" parent="@android:style/TextAppearance.Material.Subhead">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- 效果档位用它。刻意不继承 Button 的样式：它俩是 TextView，不需要按钮的语义 -->
+    <style name="Chip" parent="">
+        <item name="android:background">@drawable/bg_pill</item>
+        <item name="android:textColor">@color/text_dim</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingBottom">7dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <!-- 选中态：冰青实底 + 深色字，一眼看得出当前用的是哪档效果 -->
+    <style name="Chip.On">
+        <item name="android:background">@drawable/bg_pill_on</item>
+        <item name="android:textColor">@color/bg</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 纯图标按钮走 ImageButton：Button 不认 android:src，图标会画不出来 -->
+    <style name="IconButton" parent="@android:style/Widget.Material.ImageButton">
+        <item name="android:background">@drawable/bg_pill</item>
+        <item name="android:padding">9dp</item>
+        <item name="android:scaleType">fitCenter</item>
+    </style>
+
+    <style name="PrimaryButton" parent="@android:style/Widget.Material.Button">
+        <item name="android:background">@drawable/bg_primary</item>
+        <item name="android:textColor">@color/bg</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="GhostButton" parent="@android:style/Widget.Material.Button">
+        <item name="android:background">@drawable/bg_pill</item>
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+</resources>

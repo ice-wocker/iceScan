@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 扫描引导框：虚线的取景框，暗示「把纸放进这里」 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="#140E7490" />
+    <corners android:radius="18dp" />
+    <stroke
+        android:width="2dp"
+        android:color="@color/stroke"
+        android:dashWidth="10dp"
+        android:dashGap="8dp" />
+</shape>

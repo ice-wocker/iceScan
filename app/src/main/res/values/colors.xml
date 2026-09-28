@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 跟 iceScribe 同一套「冰」色系：深夜蓝底 + 冰青点缀 -->
+    <color name="bg">#FF0B1220</color>
+    <color name="surface">#FF141F31</color>
+    <color name="surface2">#FF1C2941</color>
+    <color name="stroke">#FF263652</color>
+    <color name="text">#FFE9F0FA</color>
+    <color name="text_dim">#FF93A6C0</color>
+    <color name="text_faint">#FF64748B</color>
+
+    <color name="brand">#FF38BDF8</color>
+    <color name="brand_dark">#FF0EA5E9</color>
+    <color name="brand_deep">#FF1D4ED8</color>
+    <color name="accent">#FF22D3EE</color>
+    <color name="danger">#FFF87171</color>
+    <color name="ok">#FF34D399</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+
+    <!-- 裁剪页的四角遮罩 -->
+    <color name="scrim">#A6000000</color>
+    <color name="paper">#FFF6F9FF</color>
+</resources>

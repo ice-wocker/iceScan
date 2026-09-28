@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+      这个 App 一个权限都不申请。
+
+      拍照：用 ACTION_IMAGE_CAPTURE 把活交给系统相机 App，照片通过我们自己的
+            ContentProvider 写回来——所以不需要 CAMERA 权限。
+      相册：用 ACTION_OPEN_DOCUMENT 由系统文件选择器授权单次读取——不需要存储权限。
+      导出：PDF 写在自己的外部目录，靠 ContentProvider 分享出去——不需要存储权限。
+      联网：根本没有这个功能，自然也不申请 INTERNET。
+
+      装完之后可以在「设置 → 应用 → iceScan → 权限」里确认：列表是空的。
+    -->
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <!-- Android 11 起，检查「有没有相机 App」需要显式声明要查询的 intent -->
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IceScan"
+        android:enableOnBackInvokedCallback="false">
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.CaptureActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+        <activity
+            android:name=".ui.CropActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+        <activity
+            android:name=".ui.ViewerActivity"
+            android:exported="false"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+        <!-- 给系统相机写照片、把 PDF 分享出去，都靠它。exported=false 只允许「授权过的」外部读取 -->
+        <provider
+            android:name=".share.ScanFileProvider"
+            android:authorities="${applicationId}.files"
+            android:exported="false"
+            android:grantUriPermissions="true" />
+
+    </application>
+
+</manifest>

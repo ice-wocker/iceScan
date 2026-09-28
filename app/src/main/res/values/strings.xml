@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">iceScan</string>
+    <string name="app_tagline">拍照 · 校正 · 合成 PDF</string>
+
+    <!-- 首页 -->
+    <string name="home_sub">离线文档扫描</string>
+    <string name="home_zero_perm">零权限</string>
+    <string name="home_scan">扫描文档</string>
+    <string name="home_import">导入图片</string>
+    <string name="home_docs">我的文档</string>
+    <string name="home_empty_title">还没有扫描件</string>
+    <string name="home_empty_desc">把纸放平拍一张，App 会自动找出纸张四边、拉直、去阴影，\n多页合成一个 PDF。全程不联网、不上传。</string>
+    <string name="home_privacy">不申请任何权限 · 不联网 · 照片只留在本机</string>
+    <string name="home_no_camera">这台设备上没找到可用的相机应用，请用「导入图片」</string>
+
+    <!-- 文档条目 -->
+    <string name="doc_pages">%1$d 页</string>
+    <string name="doc_empty">空文档</string>
+    <string name="time_just_now">刚刚</string>
+    <string name="time_minutes">%1$d 分钟前</string>
+    <string name="time_hours">%1$d 小时前</string>
+    <string name="time_days">%1$d 天前</string>
+    <string name="time_date">%1$s</string>
+
+    <!-- 扫描页 -->
+    <string name="capture_title">扫描</string>
+    <string name="capture_sub">已扫 %1$d 页</string>
+    <string name="capture_guide_title">把纸放平，四边都进画面</string>
+    <string name="capture_guide_desc">用系统相机拍一张，回来就能拖角对齐。\n光线均匀、别用手挡，效果最好。</string>
+    <string name="capture_shoot">拍一张</string>
+    <string name="capture_album">从相册导入</string>
+    <string name="capture_done">完成</string>
+    <string name="capture_shooting">正在打开相机…</string>
+    <string name="capture_failed">相机没有返回图片，换「从相册导入」试试</string>
+
+    <!-- 裁剪页 -->
+    <string name="crop_title">调整边界</string>
+    <string name="crop_hint_auto">已自动找到纸张四边 —— 拖角微调，或直接完成</string>
+    <string name="crop_hint_manual">没找到明显的纸张 —— 请把四个角拖到纸的四个角上</string>
+    <string name="crop_auto">重新自动</string>
+    <string name="crop_retake">重拍</string>
+    <string name="crop_done">完成</string>
+    <string name="crop_mode">效果</string>
+    <string name="mode_original">原图</string>
+    <string name="mode_color">彩色</string>
+    <string name="mode_gray">灰度</string>
+    <string name="mode_bw">黑白</string>
+    <string name="crop_saving">正在处理…</string>
+    <string name="crop_discard_title">放弃这一页？</string>
+    <string name="crop_discard_msg">刚才拍的照片会被丢掉。</string>
+
+    <!-- 查看页 -->
+    <string name="viewer_pages">共 %1$d 页</string>
+    <string name="viewer_add">加一页</string>
+    <string name="viewer_export">导出 PDF</string>
+    <string name="viewer_share">分享</string>
+    <string name="viewer_more">更多</string>
+    <string name="viewer_rename">重命名</string>
+    <string name="viewer_delete_doc">删除文档</string>
+    <string name="viewer_delete_page">删除这一页</string>
+    <string name="viewer_page_label">第 %1$d 页</string>
+    <string name="viewer_empty">这个文档还没有页面</string>
+    <string name="viewer_delete_doc_title">删除这个文档？</string>
+    <string name="viewer_delete_doc_msg">「%1$s」的所有页面都会被永久删除，无法恢复。</string>
+    <string name="viewer_delete_page_title">删除第 %1$d 页？</string>
+    <string name="viewer_delete_page_msg">删掉之后这一页就不在文档里了。</string>
+
+    <!-- 导出 -->
+    <string name="export_running">正在合成 PDF…</string>
+    <string name="export_done">PDF 已生成</string>
+    <string name="export_failed">导出失败：%1$s</string>
+    <string name="export_share_title">分享扫描件</string>
+    <string name="export_no_app">没有可以打开 PDF 的应用</string>
+
+    <!-- 批量导入 -->
+    <string name="import_running">正在导入图片…</string>
+    <string name="import_progress">正在校正第 %1$d / %2$d 张…</string>
+    <string name="import_done">已导入 %1$d 张</string>
+    <string name="import_none">没有导入任何图片</string>
+    <string name="import_failed">导入失败：%1$s</string>
+
+    <!-- 重命名 -->
+    <string name="rename_title">文档名称</string>
+    <string name="rename_hint">例如：房租合同</string>
+    <string name="rename_save">保存</string>
+
+    <!-- 通用 -->
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="back">返回</string>
+    <string name="share">分享</string>
+    <string name="open">打开</string>
+    <string name="default_doc_name">扫描件</string>
+</resources>

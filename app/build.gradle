@@ -1,0 +1,60 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.ice.scan'
+    compileSdk 36
+    buildToolsVersion = "36.0.0"
+
+    defaultConfig {
+        applicationId "com.ice.scan"
+        minSdk 24
+        targetSdk 36
+        versionCode 1
+        versionName "0.1.0"
+        // 纯 Java、纯框架：没有原生库，所以不限制 ABI，一个 APK 通吃所有机型（含模拟器）
+    }
+
+    def keystoreProps = rootProject.file("keystore.properties")
+    signingConfigs {
+        release {
+            if (keystoreProps.exists()) {
+                def p = new Properties()
+                keystoreProps.withInputStream { p.load(it) }
+                storeFile rootProject.file(p['storeFile'])
+                storePassword p['storePassword']
+                keyAlias p['keyAlias']
+                keyPassword p['keyPassword']
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig keystoreProps.exists() ? signingConfigs.release : signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    lint {
+        abortOnError true
+        checkReleaseBuilds true
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+}
+
+// 零第三方依赖：只有 Android 框架 + JUnit。
+dependencies {
+    testImplementation libs.junit
+}

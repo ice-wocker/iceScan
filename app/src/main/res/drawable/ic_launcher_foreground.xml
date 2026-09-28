@@ -1,0 +1,23 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- 一张纸 -->
+    <path android:fillColor="#FFF2F7FF"
+        android:pathData="M36,22h26a6,6 0 0 1 6,6v52a6,6 0 0 1 -6,6h-26a6,6 0 0 1 -6,-6v-52a6,6 0 0 1 6,-6z" />
+    <!-- 纸上的字 -->
+    <path android:fillColor="#FF9CB3CE"
+        android:pathData="M39,38h20v3.4h-20zM39,47h20v3.4h-20zM39,56h13v3.4h-13z" />
+    <!-- 扫描取景框：四个角 -->
+    <path android:strokeColor="#FF22D3EE" android:strokeWidth="4.5"
+        android:strokeLineCap="round"
+        android:pathData="M28,34v-10a4,4 0 0 1 4,-4h10" />
+    <path android:strokeColor="#FF22D3EE" android:strokeWidth="4.5"
+        android:strokeLineCap="round"
+        android:pathData="M70,20h10a4,4 0 0 1 4,4v10" />
+    <path android:strokeColor="#FF22D3EE" android:strokeWidth="4.5"
+        android:strokeLineCap="round"
+        android:pathData="M84,70v10a4,4 0 0 1 -4,4h-10" />
+    <path android:strokeColor="#FF22D3EE" android:strokeWidth="4.5"
+        android:strokeLineCap="round"
+        android:pathData="M42,88h-10a4,4 0 0 1 -4,-4v-10" />
+</vector>

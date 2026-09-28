@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 快门键：冰青到深蓝的径向渐变，比纯色更有一点「按钮」的体积感 -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <gradient
+        android:type="radial"
+        android:gradientRadius="90dp"
+        android:startColor="@color/accent"
+        android:centerColor="@color/brand"
+        android:endColor="@color/brand_deep" />
+</shape>

@@ -1,0 +1,30 @@
+<!-- API 24/25 的圆形图标兜底：直接用同一张整图 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <path android:pathData="M54,54m-54,0a54,54 0 1,0 108,0a54,54 0 1,0 -108,0">
+        <aapt:attr xmlns:aapt="http://schemas.android.com/aapt" name="android:fillColor">
+            <gradient android:type="linear"
+                android:startX="0" android:startY="0"
+                android:endX="108" android:endY="108"
+                android:startColor="#FF0B1220"
+                android:endColor="#FF1D4ED8" />
+        </aapt:attr>
+    </path>
+    <path android:fillColor="#FFF2F7FF"
+        android:pathData="M36,24h26a6,6 0 0 1 6,6v48a6,6 0 0 1 -6,6h-26a6,6 0 0 1 -6,-6v-48a6,6 0 0 1 6,-6z" />
+    <path android:fillColor="#FF9CB3CE"
+        android:pathData="M39,39h20v3.4h-20zM39,48h20v3.4h-20zM39,57h13v3.4h-13z" />
+    <path android:strokeColor="#FF22D3EE" android:strokeWidth="4.5"
+        android:strokeLineCap="round"
+        android:pathData="M28,36v-10a4,4 0 0 1 4,-4h10" />
+    <path android:strokeColor="#FF22D3EE" android:strokeWidth="4.5"
+        android:strokeLineCap="round"
+        android:pathData="M70,22h10a4,4 0 0 1 4,4v10" />
+    <path android:strokeColor="#FF22D3EE" android:strokeWidth="4.5"
+        android:strokeLineCap="round"
+        android:pathData="M84,68v10a4,4 0 0 1 -4,4h-10" />
+    <path android:strokeColor="#FF22D3EE" android:strokeWidth="4.5"
+        android:strokeLineCap="round"
+        android:pathData="M42,86h-10a4,4 0 0 1 -4,-4v-10" />
+</vector>

@@ -4,6 +4,8 @@
 
 **把手机变成一台随身扫描仪 —— 拍一张，自动找出纸的四边、拉直、去阴影，多页拼成一个 PDF，全程不联网**
 
+*Turn your phone into a pocket scanner — snap a page, auto-detect edges, flatten and merge into a PDF, fully offline.*
+
 [![Release](https://img.shields.io/github/v/release/ice-wocker/iceScan?color=38BDF8&label=Release)](https://github.com/ice-wocker/iceScan/releases)
 [![CI](https://github.com/ice-wocker/iceScan/actions/workflows/android.yml/badge.svg)](https://github.com/ice-wocker/iceScan/actions/workflows/android.yml)
 [![Stars](https://img.shields.io/github/stars/ice-wocker/iceScan?color=38BDF8)](https://github.com/ice-wocker/iceScan/stargazers)
@@ -187,3 +189,9 @@ keyPassword=…
 **用最少的代码，做最干净的一件事。**
 
 </div>
+
+---
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=ice-wocker/iceScan&type=Date)](https://www.star-history.com/#ice-wocker/iceScan&Date)
